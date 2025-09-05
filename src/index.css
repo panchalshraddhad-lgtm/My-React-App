@@ -1,0 +1,257 @@
+/* 🌸 Global Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* 🌟 Page Header */
+.mainhead {
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  padding: 20px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 6px 20px rgba(56, 239, 125, 0.3);
+}
+
+/* 📦 Grid Layout */
+.mainParent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🍴 Recipe Card */
+.recipe-container {
+  position: relative; /* needed for floating buttons */
+  background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.recipe-container:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 🏷️ Card Header */
+.recipe-header {
+  background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.recipe-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.recipe-header p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* 📖 Card Details */
+.recipe-details {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.recipe-text p {
+  color: #333;
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+/* 🖼️ Recipe Image */
+.foodimg {
+  height: 120px;
+  width: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.foodimg:hover {
+  transform: scale(1.1);
+}
+
+/* 📌 Footer */
+.recipe-footer {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0.8rem;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ❤️👍 Floating Action Buttons */
+.action-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* so clicks pass through except buttons */
+}
+
+.like-btn, .dislike-btn {
+  pointer-events: auto; /* re-enable for button */
+  border: none;
+  background: #fff;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ❤️ Like */
+.like-btn {
+  color: #e63946;
+}
+.like-btn:hover {
+  background: #e63946;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* 👎 Dislike */
+.dislike-btn {
+  color: #444;
+}
+.dislike-btn:hover {
+  background: #444;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* body {
+  background-color: white;
+}
+
+.recipe-container {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(252, 182, 159, 0.3);
+  max-width: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-container:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.recipe-header {
+  background: linear-gradient(135deg, #ff8a80 0%, #ff5722 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.recipe-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.recipe-header section {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.recipe-details {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-details p {
+  color: black;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.recipe-footer {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  text-align: center;
+}
+
+.recipe-footer small {
+  color: #4a5568;
+  font-style: italic;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainParent {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.mainhead {
+  color: beige;
+  text-align: center;
+  background-color: brown;
+  height: 50px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.foodimg {
+  height: 150px;
+  width: 150px;
+}
+
+.foodimg:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+} */

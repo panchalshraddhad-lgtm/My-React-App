@@ -1,0 +1,68 @@
+const recipes = [
+  {
+    name: "MASALA CHAI",
+    time: "Prep Time: 5min | Cook Time: 5min",
+    info1: "Serves: 4 people",
+    info2: "Difficulty: Easy",
+    info3: "Type: Beverage",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DgwwYeA-hJ3LYwrH7myNw8ybTHADUEj0iA&s",
+  },
+  {
+    name: "FILTER COFFEE",
+    time: "Prep Time: 20min | Cook Time: 15min",
+    info1: "Serves: 4 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Beverage",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMQTKWEn2LhPzj2ApcD_mHDRPYJPVG1jSF5w&s",
+  },
+  {
+    name: "DOSA",
+    time: "Prep Time: 150min | Cook Time: 20min",
+    info1: "Serves: 10 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Lunch/Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovOOPu7kTcKjqNmYg7hRznIUXDztF6zuxbA&s",
+  },
+  {
+    name: "IDLY",
+    time: "Prep Time: 150min | Cook Time: 20min",
+    info1: "Serves: 10 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Lunch/Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUEh4-q4TrvHWmKPB9JDgAoUBPxMfje5BQhQ&s",
+  },
+  {
+    name: "VADA",
+    time: "Prep Time: 120min | Cook Time: 15min",
+    info1: "Serves: 10 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Lunch/Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrtorsRJOv-VVlHNVLjwsDctBLaIe7HVbsQQ&s",
+  },
+  {
+    name: "UPMA",
+    time: "Prep Time: 5min | Cook Time: 5min",
+    info1: "Serves: 10 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/i?q=tbn:ANd9GcQ39nDwmWO_HfDbuFpA7RDGumbTIm-nhqxpFg&s",
+  },
+  {
+    name: "APPE",
+    time: "Prep Time: 120min | Cook Time: 25min",
+    info1: "Serves: 10 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1W0-67qn0W9RF9HoDXmUAAO1zLj5iOur5g&s",
+  },
+  {
+    name: "ICE CREAM",
+    time: "Prep Time: 20min | Cook Time: 15min",
+    info1: "Serves: 40 people",
+    info2: "Difficulty: Moderate",
+    info3: "Type: Breakfast",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_4PA8pY55vnJkpDELeYSvZE4FRwzk7r1RGQ&s",
+  },
+];
+
+export default recipes;
